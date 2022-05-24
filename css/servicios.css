@@ -1,0 +1,117 @@
+/*-----------------PAGINA SERVICIOS-------------------*/
+.container_servicios{
+    width:80%;
+    height: 80vh ;
+    background:var(--olivaMasClaro);  
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-areas: 
+    "servicio_1 servicio_2 servicio_3"
+   ; 
+}
+.servicio_1{
+    grid-area: servicio_1;
+    background-image:url(../img/transferencia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* .servicio_1::before{
+    content:"";
+    background: linear-gradient(orange,blue);
+    position: absolute;
+    width: 37%;
+    min-height: 80vh;
+    opacity: 0.5;
+} */
+.servicio_2{
+    grid-area: servicio_2;
+    background-image:url(../img/sistema.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+     
+}
+
+.servicio_3{
+    grid-area: servicio_3;
+    background-image:url(../img/alquiler.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  .servicio_1, .servicio_2, .servicio_3{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    
+   
+  }
+  .div_titulo_servicio{
+      display:flex;
+      align-items: center;
+      width: 100%;
+      background-color: rgba(243, 244, 251, 0.5);
+      padding: 10%;
+      
+      height: 20%;
+  }
+
+ .servicio_1:hover .titulo_servicio,.servicio_2:hover .titulo_servicio, .servicio_3:hover .titulo_servicio{
+   color: var(--negro);
+   cursor: pointer;
+ }
+/*probando la funcion con js*/
+
+#mostrarServUno,#mostrarServDos,#mostrarServTres{
+   width:80%;
+   height: 80vh ;
+   margin: auto;
+   display: none;
+   transition: ease-in-out; 
+   grid-template-columns: 60% 40%;
+   grid-template-rows:60vh 20vh;
+   grid-template-areas: 
+   "servicio_descrip servicio_imagenes"
+   "servicio_descrip servicio_imagenes" ;
+   
+}
+.servicio_descrip{
+    grid-area: servicio_descrip;
+    padding: 20% 10%;
+  
+    /* background-color: #9C9980; */
+}
+.servicio_descrip h2{
+    color: var(--negro);
+}
+.servicio_imagenes{
+    grid-area: servicio_imagenes;
+    /* background-color: #9C9980; */
+    animation: slider 10s infinite;
+}
+@keyframes slider {
+    0%, 30%{
+        background-image: url(../img/alquiler1.jpg);
+        background-size: cover;
+        opacity: 1;
+    }
+    31%, 34%{
+        opacity:0.1;
+    }
+    35%, 65%{
+        background-image: url(../img/sistema1.jpg);
+        background-size: cover;
+        opacity: 1;
+    }
+    66%, 69%{
+        opacity:0.1;
+    }
+    70%, 95%{
+        background-image: url(../img/transferencia1.jpg);
+        background-size: cover;
+        opacity: 1;
+    }
+    96%, 100%{
+        opacity:0.1;
+    }
+  }

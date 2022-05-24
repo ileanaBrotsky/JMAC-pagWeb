@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JMAC Servicios</title>
+          <!--Icono del navegador-->
+          <link rel="icon" type="image/x-icon" href="img/icono.png">
+       <!-- css general -->
+       <link rel="stylesheet" href="./css/style.css">
+       <!-- css de la pag -->
+       <link rel="stylesheet" href="./css/servicios.css">
+        <!-- animaciones -->
+        <link     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+           <!--Fontawson icons-->
+    <script src="https://kit.fontawesome.com/e2ce3ec0f9.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+        
+            <div class="container__menu">
+             <div class="div_logo">
+                <a href="./index.html"> <img src="./img/jmc_logo_124.png" width="125px" alt="logo_JMAC_Argentina" class="img_logo"></a>
+             </div>
+             <div class="menu">
+                 <input type="checkbox" id="check__menu">
+                 <label for="check__menu"id="label__check">
+                     <i class="fa-solid fa-bars icon__menu"></i>
+                 </label>
+                 <nav>
+                     <ul>
+                         <li> <a href="./empresa.html">DESCUBRA <br> LA EMPRESA</a></li>
+                        <li> <a href="">CONOZCA <br> NUESTROS SERVICIOS</a>
+                             <ul>
+                                 <li><a href="">Transferencia de Agua Temporal</a> </li>
+                                 <li><a href="">Sistema de distribución de Agua</a></li>
+                                 <li><a href="">Alquiler de equipos</a></li>
+                             </ul>
+                         </li>
+                         <li> <a href="./desarrollos.html">PROYECTOS <br> DESARROLLADOS </a></li>
+                         <li><a href="./contacto.html">DECIDA <br> CONTACTARNOS</a></li>
+                     </ul>
+                 </nav>
+             </div>
+            </div>
+         </header>
+    <main >
+        <div id="mostrarServUno" class="animate__animated animate__fadeIn  animate__slower">
+            <div class="servicio_descrip">
+            <h2>TRANSFERENCIA DE AGUA TEMPORAL</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quis voluptatum eveniet, quaerat fugiat iste quas? Commodi quae officiis accusantium quidem, repudiandae dolorem cumque beatae dolores harum consequuntur expedita autem!
+                Soluta obcaecati ducimus iusto optio, corporis omnis, voluptate a incidunt officiis tenetur laboriosam perspiciatis atque praesentium alias accusamus totam repellendus explicabo asperiores, animi exercitationem.</p>
+            </div>  
+            <div class="servicio_imagenes">
+               
+              
+            </div>
+        </div>
+        <div id="mostrarServDos" class="animate__animated animate__fadeIn  animate__slower">
+            <div class="servicio_descrip">
+                <h2>SISTEMA DISTRIBUIDO DE TRANSFERENCIA DE AGUA </h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quis voluptatum eveniet, quaerat fugiat iste quas? Commodi quae officiis accusantium quidem, repudiandae dolorem cumque beatae dolores harum consequuntur expedita autem!
+                    Soluta obcaecati ducimus iusto optio, corporis omnis, voluptate a incidunt officiis tenetur laboriosam perspiciatis atque praesentium alias accusamus totam repellendus explicabo asperiores, animi exercitationem.</p>
+                </div>  
+                <div class="servicio_imagenes">
+                 
+                  
+                </div>
+        </div>
+        <div id="mostrarServTres" class="animate__animated animate__fadeIn  animate__slower">
+            <div class="servicio_descrip">
+                <h2>ALQUILER DE EQUIPOS</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quis voluptatum eveniet, quaerat fugiat iste quas? Commodi quae officiis accusantium quidem, repudiandae dolorem cumque beatae dolores harum consequuntur expedita autem!
+                    Soluta obcaecati ducimus iusto optio, corporis omnis, voluptate a incidunt officiis tenetur laboriosam perspiciatis atque praesentium alias accusamus totam repellendus explicabo asperiores, animi exercitationem.</p>
+                </div>  
+                <div class="servicio_imagenes">
+                  
+                  
+                </div>
+        </div>
+        <div class="container_servicios" id="c_servicios">
+
+                <div class="servicio_1" id="serv_1">
+                    <div class="div_titulo_servicio">
+                        <h3 class="titulo_servicio"  onclick=mostrarServicioUno()>TRANSFERENCIA DE AGUA TEMPORAL</h3>
+                    </div> 
+                    
+                </div>
+                
+                <div class="servicio_2" id="serv_2">
+                    <div class="div_titulo_servicio">
+                        <h3 class="titulo_servicio" onclick=mostrarServicioDos()>SISTEMA DISTRIBUIDO DE TRANSFERENCIA DE AGUA </h3>
+                    </div> 
+                </div>
+                <div class="servicio_3" id="serv_3">
+                    <div class="div_titulo_servicio">
+                        <h3 class="titulo_servicio" onclick=mostrarServicioTres()>ALQUILER DE EQUIPOS</h3>
+                    </div> 
+                </div>     
+        </div>  
+    </main>
+
+  <!--Iconos-->
+  <script src="./js/servicios.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+</body>
+</html>

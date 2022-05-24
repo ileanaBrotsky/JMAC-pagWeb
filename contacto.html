@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JMAC Contacto</title>
+          <!--Icono del navegador-->
+          <link rel="icon" type="image/x-icon" href="img/icono.png">
+       <!-- css general -->
+        <link rel="stylesheet" href="./css/style.css">
+         <!-- css de la pag -->
+         <link rel="stylesheet" href="./css/contacto.css">
+        <!-- animaciones -->
+        <link     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+           <!--Fontawson icons-->
+    <script src="https://kit.fontawesome.com/e2ce3ec0f9.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+        
+            <div class="container__menu">
+             <div class="div_logo">
+                <a href="./index.html"> <img src="./img/jmc_logo_124.png" width="125px" alt="logo_JMAC_Argentina" class="img_logo"></a>
+             </div>
+             <div class="menu">
+                 <input type="checkbox" id="check__menu">
+                 <label for="check__menu"id="label__check">
+                     <i class="fa-solid fa-bars icon__menu"></i>
+                 </label>
+                 <nav>
+                     <ul>
+                         <li> <a href="./empresa.html">DESCUBRA <br> LA EMPRESA</a></li>
+                         <li> <a href="">CONOZCA <br> NUESTROS SERVICIOS</a>
+                             <ul>
+                                 <li><a href="">Transferencia de Agua Temporal</a> </li>
+                                 <li><a href="">Sistema de distribución de Agua</a></li>
+                                 <li><a href="">Alquiler de equipos</a></li>
+                             </ul>
+                         </li>
+                         <li> <a href="./desarrollos.html">PROYECTOS <br> DESARROLLADOS </a></li>
+                         <li><a id="selected" href="./contacto.html">DECIDA <br> CONTACTARNOS</a></li>
+                     </ul>
+                 </nav>
+             </div>
+            </div>
+         </header>
+<main class="container_contacto">
+    <div class="div__form__contacto" id="div__contacto">
+        <div class="card">
+            
+                <h3>CONTACTENOS</h3>
+            <form id="form" action="">
+                <input type="text"placeholder="Nombre/ Empresa">
+                <input type="email" name="" id="" placeholder="E-mail">
+                <textarea name="" id="textarea__contacto" cols="30" rows="10" placeholder="¿En qué podemos ayudarlo?"></textarea>
+              
+                <input class="btn__enviar" type="submit" value="enviar">
+            </form>   
+            <hr>
+            <div class="footer__card">
+                
+                <i>Gracias - Nos contactaremos a la brevedad</i>
+            </div>
+         </div>
+         <div class="overlay" id="overlay"></div>
+        </div>
+        <div class="div__googlemap">
+
+<iframe class="" 
+src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d99268.9846991533!2d-68.15411321349004!3d-38.966110967561775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparque%20industrial%20neuquen!5e0!3m2!1ses-419!2sar!4v1642596142241!5m2!1ses-419!2sar"
+frameborder="0" allowfullscreen="" aria-hidden="false"
+tabindex="0"></iframe>
+        </div>
+    </div>
+  
+</main>
+        <!--Iconos-->
+        <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+        <script src="./js/contacto.js"></script>  
+</body>
+</html>

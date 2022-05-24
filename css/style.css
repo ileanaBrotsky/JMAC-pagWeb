@@ -1,0 +1,291 @@
+
+/*--------------------------GENERALES-----------------------------*/
+:root {
+    --naranja: #CD773A;
+    --cremita: #FFFDF9;
+    --oliva: #827967;
+    --grisClaro: #838b8a;
+    --azul: #133B4D;
+    --negro: #000000;
+  }
+  @font-face {
+    font-family: Serpentine;
+    src: url(/fonts/Serpentine\ ICG\ Bold.ttf)
+    }
+* {
+   box-sizing: border-box;
+   font-family: 'Rubik', sans-serif;
+   color: var(--negro); /*todos los textos*/
+   margin: 0;
+   padding: 0;
+   transition: all .5s ease-in-out;
+}
+a{
+    text-decoration: none;
+    font-weight: 800;
+}
+a:hover{
+    color: var(--naranja);
+}
+h1{
+   
+    font-family: 'Serpentine';
+   
+   
+}
+h2{
+   font-family: 'Serpentine';
+    
+  
+}
+h3{
+    font-family: 'Serpentine';
+   
+}
+
+
+/*----------------------------------------------------------------*/
+/*----------------MENU DE NAVEGACION------------------------------*/
+/*HEADER*/
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+  z-index: 100;
+}
+/*BARRA MENU*/
+.container__menu{
+    width: 100%;
+    height: 70px;
+    background: var(--cremita); 
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    height: 100%;
+    margin-right: 20px;
+}
+nav{
+    height: 100%;
+}
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+nav > ul > li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+    padding: 0 22px;
+    font-size: 14px;
+}
+nav > ul > li > a{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    border-right: 2px solid var(--naranja);
+    padding: 14px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+#selected{
+    transform: scale(1.1);
+    color: var(--naranja);
+    border-radius: 10px;
+   
+}
+/*  SUBMENU*/
+nav ul li ul{
+    width: 200px;/*chequear con tamanio del texto*/
+    display: flex;
+    background: var(--cremita);
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
+    top:90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0; 
+    z-index: 200;
+    border-radius: 10px;
+    list-style: none;
+}
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top:70px;
+    transition: all 300ms ease;
+}
+/*para hacer el triangulo del submenu*/
+nav ul li ul:before{
+content: '';
+width: 0;
+height: 0;
+border-left: 12px solid transparent;
+border-right: 12px solid transparent;
+border-bottom: 12px solid var(--cremita);
+position: absolute;
+top: -12px;
+left:20px;
+}
+nav ul li ul li a{
+    display: block;
+    padding: 6px;
+    padding-left:14px;
+    margin-top: 10px;
+    font-size: 11px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+  
+
+}
+nav ul li ul li a:hover{
+    background:var(--cremita);
+    padding-left: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.3);
+    transition: all 300ms ease;
+}
+
+
+/*----------------------------------------------------------------*/
+/*-----------------FOOTER-----------------------------------------*/
+footer{
+    width: 100%;
+    bottom: 0%;
+    text-shadow: var(--negro) 0.5px 0.5px;  
+    background: var(--cremita);
+}
+.footer_index{
+    position: fixed;
+}
+.icons{
+    margin: auto;
+    width: 80%;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    padding: 0.2%;
+    position: relative;
+    bottom: 0%;
+}
+.icons> div{
+   padding:0 1% ;
+   text-align: center;
+}
+  .a_icono_localizador, .texto_footer{
+    color:var(--azul);
+    font-weight: 400 ;
+    font-size: small;
+}
+/*----------------------------------------------------------------*/
+
+
+ 
+
+/*************************************ELEMENTOS RESPONSIVOS************************************************/
+/*menu*/
+.icon__menu {
+    color: var(--negro);
+    font-size: 40px;
+    cursor: pointer;
+    height: 100%;
+    align-items: center;
+    display: flex;
+  
+ }
+ #check__menu{
+      display: none; 
+ }
+ #label__check{
+     width: 26px;
+     height: 100%;
+    display: none; 
+ 
+ }
+ /******************************************DISPOSITIVOS PEQUENIOS*******************************************/
+ @media screen and (max-width: 890px) {
+ /*--------------------MENU------------------------*/
+   nav > ul{
+     flex-direction: column;
+     margin: auto;
+     background: #f3f4fb;
+     background: linear-gradient(180deg, rgba(243,244,251,1) 0%, rgba(243,244,251,0.27494747899159666) 100%); 
+     position: fixed;
+     left: 0;
+     top: 70px;
+     height: 0px;
+     width: 100%;
+     z-index: 100;
+     opacity: 0;
+     visibility:hidden;   
+ 
+   }
+   nav > ul > li > a{
+     width: 100%;
+     height: 90%;
+     display: flex;
+     align-items: center;
+     border-right: none;
+     border-bottom: 2px solid #e27922;
+     padding: 14px;
+     text-transform: uppercase;
+     font-size: 14px;
+     transition: all 300ms ease;
+ }
+ 
+   nav > ul > li > a:hover{
+       transform: scale(1);
+   }
+   nav ul li ul {
+       left: 160px;
+       color: var(--cremita);
+       background:rgba(0,0,0,.8); ;
+   }
+   nav ul li ul a {
+      color: #fff;
+      font-weight: 600;
+   
+ }
+   nav ul li:hover ul {
+     top: 110px;
+ }
+ 
+  #selected{
+     transform: scale(1);
+  }
+  #label__check{
+     display: block;
+     height: 100%;
+     align-items: center;
+    }
+  
+  #check__menu:checked ~ nav > ul{
+     opacity: 1;
+     visibility:visible;
+     height: 79vh;
+     transition: all 300ms ease;
+ }
+ 
+/*--------------------FOOTER-----------------------*/
+footer{
+    height: 60px;
+    padding: 2% 0;
+}
+.texto_footer{
+  display: none;
+ }
+/*------------------------------------------------*/
+
+
+ }
